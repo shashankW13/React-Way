@@ -1,0 +1,75 @@
+@import "./partials";
+.subscribeContainer {
+  @extend %centrofy;
+  flex-direction: column;
+  padding: 0px 30px;
+  margin-bottom: 130px;
+  h3 {
+    color: $primaryColor;
+    text-align: center;
+  }
+  h5 {
+    margin: 1.5rem 0 4rem 0;
+    color: $grey;
+    font-size: 2rem;
+  }
+}
+
+footer {
+  background: $primaryColor;
+  color: #fff;
+  padding: 80px 30px;
+  @extend %centrofy;
+  flex-direction: column;
+  h5 {
+    font-size: 1.5rem;
+    &:nth-child(1) {
+      margin-bottom: 2rem;
+    }
+    span {
+      margin: 0 3rem;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .subscribeContainer {
+    h5 {
+      margin: 2vw 0 4.5vw 0;
+      color: $grey;
+      font-size: 2.2vw;
+    }
+    margin-bottom: 8vw;
+  }
+  footer {
+    padding: 5vw 30px;
+
+    h5 {
+      font-size: 2vw;
+      &:nth-child(1) {
+        margin-bottom: 2vw;
+      }
+      span {
+        margin: 0 3vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .subscribeContainer {
+    h5 {
+      margin: 2vw 0 10vw 0;
+      font-size: 5vw;
+    }
+    margin-bottom: 20vw;
+  }
+  footer {
+    h5 {
+      font-size: 3vw;
+      &:nth-child(1) {
+        margin-bottom: 3vw;
+      }
+    }
+  }
+}

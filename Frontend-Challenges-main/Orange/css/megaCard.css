@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap");
+.megaCardContainer, .megaCardContainer .megaCard {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.megaCardContainer {
+  margin: 0 30px;
+  transform: translateY(-10rem); }
+  .megaCardContainer .megaCard {
+    padding: 70px 0;
+    max-width: 1400px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 10px 34px rgba(0, 0, 0, 0.15); }
+  .megaCardContainer .card {
+    margin: 0 70px; }
+    .megaCardContainer .card h4 {
+      color: #031d5b;
+      margin: 30px 0;
+      padding: 10px 0;
+      width: fit-content;
+      border-bottom: 4px solid #f8765e; }
+    .megaCardContainer .card p {
+      line-height: 2rem;
+      color: #5b6c94; }
+
+@media (max-width: 1400px) {
+  .megaCardContainer {
+    transform: translateY(-10vw); }
+    .megaCardContainer .megaCard {
+      padding: 4vw 0;
+      border-radius: 20px; }
+    .megaCardContainer .card {
+      margin: 0 4vw; }
+      .megaCardContainer .card img {
+        width: 60%; }
+      .megaCardContainer .card h4 {
+        margin: 2vw 0;
+        padding: 10px 0;
+        font-size: 1.2vw; }
+      .megaCardContainer .card p {
+        line-height: 2.5vw;
+        font-size: 1.2vw; } }
+
+@media (max-width: 992px) {
+  .megaCardContainer .card h4 {
+    margin: 2vw 0;
+    padding: 10px 0;
+    font-size: 1.5vw; }
+  .megaCardContainer .card p {
+    line-height: 3vw;
+    font-size: 1.5vw; } }
+
+@media (max-width: 640px) {
+  .megaCardContainer {
+    transform: translateY(-100px); }
+    .megaCardContainer .megaCard {
+      padding: 5vw 0;
+      flex-direction: column;
+      border-radius: 20px; }
+    .megaCardContainer .card {
+      margin: 5vw;
+      text-align: center; }
+      .megaCardContainer .card img {
+        width: 70%; }
+      .megaCardContainer .card h4 {
+        margin: 6vw 0;
+        font-size: 4vw; }
+      .megaCardContainer .card p {
+        line-height: 7vw;
+        font-size: 4vw;
+        text-align: left; } }

@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap");
+.tasteContainer, .tasteContainer .taste {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.tasteContainer .taste {
+  width: 1400px;
+  margin: 0 30px;
+  justify-content: space-between; }
+
+.tasteContainer .tasteDesc {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; }
+  .tasteContainer .tasteDesc h3 {
+    color: #f8765e; }
+  .tasteContainer .tasteDesc h5 {
+    color: #031d5b;
+    margin: 1rem 0;
+    font-size: 2rem; }
+  .tasteContainer .tasteDesc p {
+    width: 80%;
+    color: #5b6c94;
+    margin-bottom: 3rem;
+    line-height: 1.5rem; }
+
+@media (max-width: 1400px) {
+  .tasteContainer img {
+    width: 40%; }
+  .tasteContainer .tasteDesc h5 {
+    margin: 1vw 0;
+    font-size: 2vw; }
+  .tasteContainer .tasteDesc p {
+    margin-bottom: 2vw;
+    line-height: 2.5vw;
+    font-size: 1.2vw; } }
+
+@media (max-width: 992px) {
+  .tasteContainer img {
+    width: 40%; }
+  .tasteContainer .tasteDesc h5 {
+    margin: 1vw 0;
+    font-size: 2.5vw; }
+  .tasteContainer .tasteDesc p {
+    margin-bottom: 2vw;
+    line-height: 3vw;
+    font-size: 1.5vw; } }
+
+@media (max-width: 640px) {
+  .tasteContainer .taste {
+    flex-direction: column; }
+  .tasteContainer img {
+    width: 80%; }
+  .tasteContainer .tasteDesc {
+    margin-top: 10vw;
+    width: 100%;
+    align-items: center;
+    text-align: center; }
+    .tasteContainer .tasteDesc h5 {
+      margin: 3vw 0;
+      font-size: 4vw; }
+    .tasteContainer .tasteDesc p {
+      margin-bottom: 4vw;
+      line-height: 7vw;
+      font-size: 4vw; } }

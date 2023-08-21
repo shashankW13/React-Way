@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:ital,wght@0,400;1,700&display=swap");
+/* font-family: 'DM Serif Display', serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+
+body {
+  font-family: "Karla", sans-serif; }
+  body > section,
+  body > footer,
+  body > nav {
+    display: flex;
+    justify-content: center;
+    padding: 30px 50px; }
+
+ul {
+  list-style: none;
+  text-transform: uppercase;
+  color: #837d87; }
+  ul li {
+    cursor: pointer;
+    font-weight: 700; }
+    ul li a {
+      color: #837d87; }
+
+.title {
+  font-family: "DM Serif Display", serif;
+  letter-spacing: 0.15rem;
+  font-size: 4rem; }
+
+button {
+  cursor: pointer;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+hr {
+  width: 150px;
+  margin-bottom: 60px; }
+
+a {
+  text-decoration: none; }
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: #fff; }
+  nav .navContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 1300px; }
+    nav .navContainer ul {
+      display: flex; }
+      nav .navContainer ul li {
+        margin-left: 40px; }
+        nav .navContainer ul li a:hover {
+          color: #2b272f; }
+        nav .navContainer ul li span {
+          border: 2px solid #2d2640;
+          color: #2d2640;
+          padding: 10px 20px; }
+          nav .navContainer ul li span:hover {
+            background: #2d2640;
+            color: #fff; }
+    nav .navContainer .menu {
+      display: none; }
+
+.labelContainer {
+  position: relative;
+  background: #2d2640;
+  color: #fff; }
+  .labelContainer .label {
+    position: relative;
+    width: 1300px; }
+    .labelContainer .label section {
+      width: 50%;
+      padding: 70px 40px 70px 0; }
+      .labelContainer .label section .title {
+        line-height: 4.5rem;
+        margin: 40px 0; }
+      .labelContainer .label section p {
+        margin-bottom: 50px;
+        line-height: 2rem; }
+      .labelContainer .label section button {
+        background: transparent;
+        border: 2px solid #fafafa;
+        color: #fafafa;
+        padding: 15px 20px;
+        font-size: 1rem;
+        letter-spacing: 0.2rem; }
+        .labelContainer .label section button:hover {
+          background: #fafafa;
+          color: #2d2640; }
+    .labelContainer .label img {
+      position: absolute;
+      top: 70px;
+      right: 0; }
+  .labelContainer::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 500px;
+    background: url("../images/bg-pattern-intro-right-desktop.svg") no-repeat center right/contain; }
+  .labelContainer::before {
+    position: absolute;
+    content: "";
+    bottom: -330px;
+    left: 0;
+    width: 200px;
+    height: 600px;
+    background: url("../images/bg-pattern-intro-left-desktop.svg") no-repeat center left/contain; }
+
+.charContainer {
+  margin-top: 170px;
+  position: relative;
+  z-index: 1; }
+  .charContainer .char {
+    width: 1300px; }
+    .charContainer .char > .title {
+      margin: 50px 0; }
+    .charContainer .char section {
+      display: flex;
+      justify-content: space-between; }
+      .charContainer .char section div {
+        padding-right: 40px;
+        width: 33.33%; }
+        .charContainer .char section div img,
+        .charContainer .char section div h3,
+        .charContainer .char section div p {
+          margin-top: 20px; }
+        .charContainer .char section div h3 {
+          font-size: 1.5rem; }
+        .charContainer .char section div p {
+          color: #878588; }
+
+.moreWork {
+  margin: 150px 0; }
+  .moreWork div {
+    width: 1300px;
+    position: relative;
+    padding: 80px;
+    background: #2d2640;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .moreWork div .title {
+      width: 70%;
+      z-index: 10; }
+    .moreWork div button {
+      padding: 20px 40px;
+      font-size: 1.2rem;
+      letter-spacing: 0.15rem;
+      border: 2px solid #fff;
+      background: transparent;
+      color: #fff;
+      z-index: 10; }
+      .moreWork div button:hover {
+        background: #fff;
+        color: #2d2640; }
+    .moreWork div::after {
+      content: "";
+      position: absolute;
+      background: url("../images/bg-pattern-how-we-work-desktop.svg") no-repeat right/contain;
+      width: 600px;
+      top: 0;
+      right: 0;
+      height: 100%; }
+
+footer {
+  position: relative;
+  background: #fafafa;
+  overflow: hidden;
+  z-index: 1; }
+  footer .footerContainer {
+    width: 1300px; }
+    footer .footerContainer header {
+      padding: 30px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #c2c2c2; }
+      footer .footerContainer header img {
+        height: 100%; }
+      footer .footerContainer header div img {
+        margin-left: 10px;
+        cursor: pointer; }
+    footer .footerContainer section {
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-between; }
+      footer .footerContainer section div h4 {
+        text-transform: uppercase;
+        color: #878588;
+        margin-bottom: 20px; }
+      footer .footerContainer section div li {
+        color: #2d2640;
+        line-height: 2rem; }
+    footer .footerContainer::after {
+      content: "";
+      position: absolute;
+      background: url("../images/bg-pattern-footer-desktop.svg") no-repeat left/cover;
+      height: 80%;
+      width: 700px;
+      top: 0;
+      left: 0;
+      z-index: -1; }
+
+@media (max-width: 1200px) {
+  .title {
+    font-size: 3rem; }
+  hr {
+    margin-bottom: 30px; }
+  .labelContainer .label section {
+    padding: 30px 20px 30px 0; }
+    .labelContainer .label section .title {
+      line-height: 4rem;
+      margin: 20px 0; }
+    .labelContainer .label section p {
+      margin-bottom: 50px;
+      line-height: 2rem; }
+  .labelContainer .label img {
+    top: 30px;
+    width: 420px; }
+  .labelContainer::after {
+    width: 300px;
+    height: 400px; }
+  .labelContainer::before {
+    bottom: -270px;
+    width: 150px;
+    height: 500px; }
+  .charContainer .char > .title {
+    margin-bottom: 30px; }
+  .charContainer .char section {
+    display: flex;
+    justify-content: space-between; }
+    .charContainer .char section div {
+      padding-right: 30px; }
+      .charContainer .char section div h3 {
+        font-size: 1.2rem; }
+      .charContainer .char section div p {
+        font-size: 1rem; }
+  .moreWork {
+    margin: 100px 0; }
+    .moreWork div {
+      padding: 50px; }
+      .moreWork div .title {
+        width: 70%;
+        font-size: 3vw;
+        z-index: 10;
+        margin-right: 20px; }
+      .moreWork div button {
+        padding: 15px 25px;
+        font-size: 2vw; }
+      .moreWork div::after {
+        width: 600px;
+        top: 0;
+        right: 0; } }
+
+@media (max-width: 992px) {
+  hr {
+    margin-bottom: 0; }
+  .title {
+    font-size: 3rem; }
+  .labelContainer .label section .title {
+    line-height: 3.5rem;
+    margin: 20px 0; }
+  .labelContainer .label section p {
+    font-size: 0.8rem;
+    margin-bottom: 40px;
+    line-height: 1.5rem; }
+  .labelContainer .label section button {
+    padding: 15px 20px;
+    font-size: 0.6rem; }
+  .labelContainer .label img {
+    width: 350px;
+    top: 30px; }
+  .labelContainer::after {
+    width: 300px;
+    height: 200px; }
+  .labelContainer::before {
+    bottom: -210px;
+    width: 100px;
+    height: 400px; } }
+
+@media (max-width: 895px) {
+  .title {
+    font-size: 2rem; }
+  .labelContainer .label section {
+    padding: 20px 20px 20px 0; }
+    .labelContainer .label section .title {
+      line-height: 3rem; }
+  .labelContainer .label img {
+    width: 320px; } }
+
+@media (max-width: 767px) {
+  .labelContainer .label {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center; }
+    .labelContainer .label section {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 70%; }
+      .labelContainer .label section .title {
+        text-align: center; }
+      .labelContainer .label section p {
+        text-align: center; }
+    .labelContainer .label img {
+      position: static;
+      width: 100%;
+      height: 300px;
+      object-fit: contain;
+      z-index: 1; }
+  .labelContainer::after {
+    z-index: 0;
+    width: 400px;
+    height: 500px; }
+  .labelContainer::before {
+    bottom: -330px;
+    left: 0;
+    width: 200px;
+    height: 600px; }
+  .charContainer {
+    margin-top: 70px;
+    text-align: center; }
+    .charContainer .char {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .charContainer .char > .title {
+        font-size: 3rem; }
+      .charContainer .char section {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .charContainer .char section div {
+          padding-right: 0px;
+          width: 80%; }
+          .charContainer .char section div img,
+          .charContainer .char section div h3,
+          .charContainer .char section div p {
+            margin-top: 20px; }
+          .charContainer .char section div h3 {
+            font-size: 1.5rem; }
+          .charContainer .char section div p {
+            color: #878588; }
+  .moreWork {
+    margin: 100px 0;
+    padding: 0; }
+    .moreWork div {
+      padding: 30px; }
+      .moreWork div .title {
+        width: 70%;
+        font-size: 3vw;
+        z-index: 10;
+        margin-right: 20px; }
+      .moreWork div button {
+        padding: 10px 20px;
+        font-size: 2vw;
+        line-height: 0.7rem; }
+      .moreWork div::after {
+        width: 600px;
+        top: 0;
+        right: 0; }
+  footer .footerContainer header {
+    flex-direction: column; }
+    footer .footerContainer header img {
+      margin-bottom: 20px; }
+    footer .footerContainer header div img {
+      margin-left: 10px;
+      cursor: pointer; }
+  footer .footerContainer section {
+    margin-top: 30px;
+    flex-direction: column;
+    text-align: center; }
+    footer .footerContainer section div h4 {
+      margin: 30px 0 10px 0; }
+  footer .footerContainer::after {
+    height: 40%; }
+  nav .navContainer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    nav .navContainer .menu {
+      display: inline-block;
+      cursor: pointer; }
+    nav .navContainer .active {
+      display: flex;
+      animation: fall 0.2s ease; }
+    nav .navContainer ul {
+      display: none;
+      position: absolute;
+      background: white;
+      box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+      padding: 20px;
+      text-align: center;
+      top: 80px;
+      width: 100%;
+      flex-direction: column; }
+      nav .navContainer ul li {
+        margin-left: 0;
+        margin: 20px 0; } }
+
+@keyframes fall {
+  from {
+    opacity: 0;
+    transform: translateY(-120%); }
+  to {
+    opacity: 1;
+    transform: translateY(0%); } }

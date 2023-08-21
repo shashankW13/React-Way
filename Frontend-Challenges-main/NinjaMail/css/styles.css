@@ -1,0 +1,692 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Raleway:wght@500;700;800;900&display=swap");
+body,
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+  color: black; }
+  body ul,
+  * ul {
+    list-style: none; }
+  body h3,
+  * h3 {
+    font-weight: 900;
+    line-height: 3.5rem;
+    font-size: 2.8rem;
+    font-family: "Playfair Display", serif; }
+  body a,
+  * a {
+    text-decoration: none;
+    color: black; }
+  body button,
+  * button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 15px 30px;
+    font-size: 1.4rem;
+    letter-spacing: 1.05px; }
+  body input,
+  * input {
+    padding: 15px 30px;
+    font-size: 1.4rem;
+    outline: none; }
+  body img,
+  * img {
+    height: 100%;
+    object-fit: cover; }
+  body .patterns,
+  * .patterns {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0; }
+    body .patterns img,
+    * .patterns img {
+      position: absolute;
+      height: auto; }
+
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  display: flex;
+  justify-content: center; }
+  nav main {
+    width: 1400px;
+    display: flex;
+    justify-content: space-between; }
+  nav section,
+  nav ul {
+    display: flex;
+    align-items: center; }
+  nav .mainLogo {
+    height: 2.5rem; }
+  nav .mainTitle {
+    font-weight: 900;
+    font-size: 2rem;
+    transform: translateX(-10%); }
+  nav li a {
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 10px 20px;
+    letter-spacing: 1.27px; }
+    nav li a:hover {
+      border-bottom: 5px solid #4ba87d; }
+  nav li:last-child a {
+    border: 5px solid #4ba87d;
+    background: #4ba87d;
+    color: #fff;
+    white-space: nowrap; }
+
+.banner {
+  position: relative; }
+  .banner > .patterns {
+    z-index: 2; }
+    .banner > .patterns .r_2 {
+      bottom: -4%;
+      left: 20%;
+      z-index: 1; }
+    .banner > .patterns .r_31 {
+      bottom: 30%;
+      left: -45px; }
+    .banner > .patterns .e_31 {
+      top: 15%;
+      left: 5%; }
+  .banner section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 200px 0 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; }
+    .banner section .bannerText {
+      position: relative;
+      z-index: 1;
+      width: 40%;
+      margin-top: -2rem; }
+      .banner section .bannerText .bannerTitle {
+        font-size: 3.5rem;
+        line-height: 4.5rem; }
+      .banner section .bannerText .bannerDesc {
+        font-size: 1.2rem;
+        margin: 30px 0;
+        line-height: 1.6rem;
+        font-weight: 500; }
+      .banner section .bannerText > .patterns .r_1 {
+        top: -30%;
+        left: 35%; }
+      .banner section .bannerText > .patterns .r_10 {
+        top: 0%;
+        left: -30%; }
+      .banner section .bannerText > .patterns .e_32 {
+        bottom: 20%;
+        left: -15%; }
+    .banner section .bannerImage {
+      position: relative;
+      z-index: 0;
+      margin-left: -110px; }
+      .banner section .bannerImage > .patterns {
+        z-index: -1; }
+        .banner section .bannerImage > .patterns .r_32 {
+          top: -5%;
+          right: -3%; }
+        .banner section .bannerImage > .patterns .r_9 {
+          top: -15%;
+          right: 35%; }
+        .banner section .bannerImage > .patterns .e_1 {
+          top: -2%;
+          left: 25%; }
+        .banner section .bannerImage > .patterns .e_33 {
+          right: -10%;
+          top: -15%; }
+        .banner section .bannerImage > .patterns .e_34 {
+          bottom: -10%;
+          left: 15%; }
+    .banner section .btns {
+      display: flex; }
+      .banner section .btns button {
+        flex: 1;
+        color: #fff;
+        border: 2px solid #4ba87d;
+        background: #4ba87d;
+        margin-right: 20px; }
+      .banner section .btns button:last-child {
+        color: #4ba87d;
+        background: #fff;
+        border: 2px solid #4ba87d;
+        margin: 0; }
+
+.reach {
+  position: relative;
+  background: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  padding: 150px 20px; }
+  .reach section {
+    z-index: 1;
+    padding: 100px;
+    width: 1200px;
+    background: url("../images/banner/reach.png") no-repeat center/cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .reach section .reachTitle {
+      color: #fff;
+      font-size: 4rem; }
+    .reach section button {
+      margin: 100px 0;
+      background: #fff;
+      color: #4ba87d; }
+  .reach::after {
+    z-index: 0;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background: url("../images/Patterns/slash_black.png") no-repeat left/cover;
+    left: 0;
+    top: 5%; }
+
+.servicesContainer {
+  padding: 150px 20px 250px 20px;
+  background: #caeac7;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .servicesContainer > .patterns {
+    z-index: 0; }
+    .servicesContainer > .patterns .r16 {
+      right: 15%;
+      top: 10%; }
+    .servicesContainer > .patterns .e9 {
+      right: 0%;
+      bottom: 50%; }
+    .servicesContainer > .patterns .e10 {
+      right: 20%;
+      bottom: 30%; }
+    .servicesContainer > .patterns .sf2 {
+      right: 10%;
+      bottom: 20%; }
+    .servicesContainer > .patterns .r13 {
+      left: 15%;
+      top: 40%; }
+    .servicesContainer > .patterns .e11 {
+      left: 10%;
+      bottom: 10%; }
+    .servicesContainer > .patterns .sf3 {
+      left: 30%;
+      bottom: 30%; }
+  .servicesContainer .services {
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    grid-gap: 50px;
+    align-items: center;
+    z-index: 1; }
+    .servicesContainer .services .cards {
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      background-color: #fff;
+      height: 450px; }
+      .servicesContainer .services .cards .cardImg {
+        height: 260px;
+        width: inherit;
+        display: flex;
+        justify-content: center;
+        overflow: hidden; }
+        .servicesContainer .services .cards .cardImg img {
+          width: 100%; }
+      .servicesContainer .services .cards .cardDesc {
+        padding: 30px; }
+        .servicesContainer .services .cards .cardDesc p {
+          font-weight: 500;
+          margin-bottom: 20px;
+          line-height: 25px; }
+        .servicesContainer .services .cards .cardDesc a {
+          color: #4ba87d; }
+      .servicesContainer .services .cards:nth-child(1) {
+        transform: translateY(-100px); }
+    .servicesContainer .services .desc {
+      width: 130%; }
+      .servicesContainer .services .desc p {
+        margin-top: 20px;
+        font-size: 1.2rem;
+        line-height: 1.8rem; }
+  .servicesContainer::after {
+    z-index: 0;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background: url("../images/Patterns/slash_white.png") no-repeat right/contain;
+    right: 0;
+    bottom: -50%; }
+
+.memberContainer {
+  transform: translateY(-100px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px; }
+  .memberContainer .members {
+    display: grid;
+    padding: 0 20px;
+    grid-template-columns: repeat(3, 360px);
+    grid-gap: 40px;
+    justify-content: center; }
+    .memberContainer .members div {
+      position: relative;
+      padding: 20px;
+      height: 240px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end; }
+      .memberContainer .members div h4,
+      .memberContainer .members div p {
+        color: #fff;
+        z-index: 1; }
+      .memberContainer .members div h4 {
+        font-size: 2rem;
+        font-weight: 900; }
+      .memberContainer .members div p {
+        font-size: 1.2rem; }
+      .memberContainer .members div::after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: linear-gradient(0deg, #000000 -32.5%, rgba(84, 84, 84, 0.0001) 67.78%); }
+    .memberContainer .members .frankie {
+      background: url("../images/banner/frankie.png") no-repeat center/cover; }
+    .memberContainer .members .camile {
+      background: url("../images/banner/camile.png") no-repeat center/cover; }
+    .memberContainer .members .elayne {
+      background: url("../images/banner/elayne.png") no-repeat center/cover; }
+  .memberContainer .memberDesc {
+    margin: 40px 0;
+    max-width: 800px;
+    text-align: center; }
+  .memberContainer .memberJoin {
+    position: relative; }
+    .memberContainer .memberJoin input {
+      border: 1px solid #9f9f9f; }
+    .memberContainer .memberJoin button {
+      border: 1px solid #4ba87d;
+      color: #fff;
+      background: #4ba87d;
+      margin-left: 10px; }
+  .memberContainer .joined::after {
+    content: "Thanks! Email received";
+    position: absolute;
+    bottom: -50px;
+    left: 20px;
+    color: #4ba87d;
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: 1.05px; }
+
+.brandContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; }
+  .brandContainer h3 {
+    max-width: 500px;
+    text-align: center; }
+  .brandContainer .brandImages {
+    margin: 60px 0;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .brandContainer .brandImages img {
+      margin: 0 20px; }
+
+.getStarted {
+  padding: 80px;
+  background: #4ba87d;
+  text-align: center; }
+  .getStarted h3 {
+    color: #fff;
+    margin-bottom: 80px;
+    font-size: 4rem; }
+  .getStarted button {
+    background: #fff;
+    color: #4ba87d; }
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px; }
+  footer .footerContainer {
+    width: 1200px; }
+  footer .links {
+    padding: 100px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #dbdbdb; }
+    footer .links .logo {
+      display: flex;
+      align-items: center;
+      height: 50px; }
+      footer .links .logo h4 {
+        transform: translateX(-20%);
+        font-weight: 900;
+        font-size: 2rem; }
+    footer .links .lists {
+      display: flex; }
+      footer .links .lists ul {
+        margin: 0 40px;
+        font-size: 1.2rem;
+        line-height: 2rem;
+        font-weight: 700; }
+  footer .terms {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between; }
+    footer .terms h5 {
+      font-weight: 700; }
+
+@media (max-width: 1200px) {
+  body button,
+  body input {
+    padding: 1.5vw 3vw;
+    font-size: 2vw; }
+  body h3 {
+    line-height: 4vw;
+    font-size: 3.5vw; }
+  nav .mainLogo {
+    height: 2rem; }
+  nav .mainTitle {
+    font-size: 1.6rem; }
+  nav li a {
+    font-size: 0.8rem;
+    margin-left: 1vw;
+    padding: 5px 1vw; }
+  .banner .patterns .r_31 {
+    display: none; }
+  .banner section {
+    padding: 15vw 20px 10vw 30px; }
+    .banner section .bannerText {
+      width: 50%;
+      margin-top: -2vw; }
+      .banner section .bannerText .bannerTitle {
+        font-size: 4.9vw;
+        line-height: 6vw; }
+      .banner section .bannerText .bannerDesc {
+        font-size: 1.8vw;
+        margin: 2vw 0 2.5vw 0;
+        line-height: 2.5vw;
+        font-weight: 500; }
+    .banner section .bannerImage {
+      margin-left: -80px;
+      height: 35vw; }
+      .banner section .bannerImage .e_33 {
+        display: none; }
+    .banner section .btns button {
+      font-size: 1.8vw;
+      margin-right: 2vw; }
+  .reach {
+    padding: 100px 20px; }
+    .reach section {
+      padding: 10vw;
+      width: 100%; }
+      .reach section .reachTitle {
+        font-size: 5vw; }
+      .reach section button {
+        margin: 8vw 0; }
+  .servicesContainer {
+    padding: 15vw 20px 20vw 20px; }
+    .servicesContainer .services {
+      grid-template-columns: repeat(3, 25vw);
+      grid-gap: 5vw;
+      width: 100%;
+      justify-content: center; }
+      .servicesContainer .services .cards {
+        height: 40vw; }
+        .servicesContainer .services .cards .cardImg {
+          height: 22vw; }
+        .servicesContainer .services .cards .cardDesc {
+          padding: 2vw;
+          font-size: 1.4vw; }
+          .servicesContainer .services .cards .cardDesc p {
+            font-weight: 500;
+            margin-bottom: 20px;
+            line-height: 2vw; }
+        .servicesContainer .services .cards:nth-child(1) {
+          transform: translateY(-10vw); }
+      .servicesContainer .services .desc {
+        width: 100%; }
+        .servicesContainer .services .desc p {
+          margin-top: 20px;
+          font-size: 1.5vw;
+          line-height: 2.5vw; }
+  .memberContainer {
+    transform: translateY(-10vw); }
+    .memberContainer .members {
+      grid-template-columns: repeat(3, 30vw);
+      grid-gap: 2vw; }
+      .memberContainer .members div {
+        height: 20vw;
+        padding: 2vw; }
+        .memberContainer .members div h4 {
+          font-size: 3vw; }
+        .memberContainer .members div p {
+          font-size: 1.5vw; }
+    .memberContainer .memberDesc {
+      margin: 5vw 0; }
+    .memberContainer .joined::after {
+      bottom: -4vw;
+      left: 2vw;
+      font-size: 2vw; }
+  .brandContainer h3 {
+    text-align: center; }
+  .brandContainer .brandImages {
+    margin: 60px 0;
+    display: flex;
+    align-items: center; }
+    .brandContainer .brandImages img {
+      width: 10vw;
+      height: auto;
+      margin: 0 2vw; }
+  .getStarted {
+    padding: 10vw; }
+    .getStarted h3 {
+      margin-bottom: 8vw;
+      font-size: 5vw; }
+  footer .links {
+    padding: 8vw 0; }
+    footer .links .logo {
+      height: 4vw; }
+      footer .links .logo h4 {
+        font-size: 3vw; }
+    footer .links .lists ul {
+      margin: 0 3.5vw;
+      font-size: 1.5vw;
+      line-height: 3vw; }
+  footer .terms {
+    padding: 4vw 0; }
+    footer .terms h5 {
+      font-size: 1.2vw; } }
+
+@media (max-width: 952px) {
+  .patterns img {
+    transform: scale(0.7); }
+  nav .mainLogo {
+    height: 1.5rem; }
+  nav .mainTitle {
+    font-size: 1.4rem; }
+  nav li a {
+    font-size: 0.6rem;
+    letter-spacing: 1px; } }
+
+@media (max-width: 640px) {
+  body button,
+  body input {
+    padding: 2vw 4vw !important;
+    font-size: 3vw !important; }
+  body h3 {
+    line-height: 7vw;
+    font-size: 6vw; }
+  body .patterns {
+    display: none; }
+  nav .mainTitle {
+    font-size: 1.2rem; }
+  nav li a {
+    display: none; }
+  nav li:last-child a {
+    display: block;
+    padding: 10px; }
+  .banner section {
+    margin-top: 4rem;
+    padding: 0;
+    position: relative;
+    justify-content: flex-start;
+    flex-direction: column-reverse; }
+    .banner section .bannerText {
+      padding: 10px 15px;
+      width: 100%;
+      margin-top: 0;
+      position: static; }
+      .banner section .bannerText .bannerTitle {
+        font-size: 7vw;
+        position: absolute;
+        top: 8vw;
+        left: 8vw;
+        width: 50%;
+        line-height: 10vw; }
+      .banner section .bannerText .bannerDesc {
+        font-size: 3vw;
+        margin: 0vw 0 4vw 0;
+        line-height: 5vw;
+        text-align: center; }
+    .banner section .bannerImage {
+      margin: 0;
+      width: 100vw;
+      height: auto; }
+      .banner section .bannerImage img {
+        height: auto;
+        width: 100%; }
+    .banner section .btns {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 5vw; }
+      .banner section .btns button {
+        flex: 1;
+        margin-right: 4vw; }
+  .reach section {
+    padding: 10vw; }
+    .reach section .reachTitle {
+      font-size: 7vw; }
+  .servicesContainer {
+    padding: 10vw 20px 15vw 20px; }
+    .servicesContainer .services {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      justify-content: center; }
+      .servicesContainer .services .cards {
+        width: 60vw;
+        height: 80vw; }
+        .servicesContainer .services .cards .cardImg {
+          height: 50vw; }
+        .servicesContainer .services .cards .cardDesc {
+          height: 30vw;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          padding: 2vw;
+          font-size: 3vw; }
+          .servicesContainer .services .cards .cardDesc p {
+            font-weight: 500;
+            margin-bottom: 20px;
+            line-height: 4vw; }
+        .servicesContainer .services .cards:nth-child(1) {
+          transform: translateX(-5vw); }
+        .servicesContainer .services .cards:nth-child(2) {
+          transform: translateX(5vw); }
+      .servicesContainer .services .desc {
+        text-align: center; }
+        .servicesContainer .services .desc p {
+          margin: 20px 0;
+          font-size: 3vw;
+          line-height: 4vw; }
+  .memberContainer .members {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 5vw; }
+    .memberContainer .members div {
+      width: 70vw;
+      height: 50vw;
+      padding: 2vw; }
+      .memberContainer .members div h4 {
+        font-size: 6vw; }
+      .memberContainer .members div p {
+        font-size: 3vw; }
+  .memberContainer .memberDesc {
+    margin: 5vw 0; }
+  .memberContainer .memberJoin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; }
+    .memberContainer .memberJoin input {
+      width: 80%; }
+    .memberContainer .memberJoin button {
+      margin-top: 4vw;
+      margin-left: 0px; }
+  .memberContainer .joined::after {
+    bottom: -5.5vw;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3vw; }
+  .brandContainer {
+    padding: 0 40px; }
+    .brandContainer .brandImages {
+      margin: 6vw 0;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap; }
+      .brandContainer .brandImages img {
+        width: 20vw;
+        margin: 4vw; }
+  .getStarted h3 {
+    font-size: 10vw;
+    line-height: 11.5vw; }
+  footer .links {
+    padding: 8vw 0;
+    flex-direction: column; }
+    footer .links .logo {
+      height: 4vw;
+      margin-bottom: 5vw; }
+      footer .links .logo h4 {
+        font-size: 3vw; }
+    footer .links .lists {
+      display: block;
+      column-width: 30vw; }
+      footer .links .lists ul {
+        margin: 0 3.5vw;
+        font-size: 3vw;
+        line-height: 6vw; }
+  footer .terms {
+    padding: 4vw 0;
+    flex-direction: column; }
+    footer .terms h5 {
+      font-size: 2.5vw;
+      line-height: 3vw;
+      margin: 2vw 0; } }

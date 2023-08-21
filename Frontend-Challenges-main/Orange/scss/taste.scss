@@ -1,0 +1,99 @@
+@import "./_partials.scss";
+
+.tasteContainer {
+  @extend %centrofy;
+  .taste {
+    // background-color: aqua;
+    width: $max-width;
+    margin: 0 30px;
+    @extend %centrofy;
+    justify-content: space-between;
+  }
+  .tasteDesc {
+    text-align: right;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    h3 {
+      color: $primaryColor;
+    }
+    h5 {
+      color: $darkBlue;
+      margin: 1rem 0;
+
+      font-size: 2rem;
+    }
+    p {
+      width: 80%;
+      color: $kindaBlue;
+      margin-bottom: 3rem;
+      line-height: 1.5rem;
+    }
+  }
+}
+@media (max-width: 1400px) {
+  .tasteContainer {
+    img {
+      width: 40%;
+    }
+    .tasteDesc {
+      h5 {
+        margin: 1vw 0;
+
+        font-size: 2vw;
+      }
+      p {
+        margin-bottom: 2vw;
+        line-height: 2.5vw;
+        font-size: 1.2vw;
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .tasteContainer {
+    img {
+      width: 40%;
+    }
+    .tasteDesc {
+      h5 {
+        margin: 1vw 0;
+
+        font-size: 2.5vw;
+      }
+      p {
+        margin-bottom: 2vw;
+        line-height: 3vw;
+        font-size: 1.5vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .tasteContainer {
+    .taste {
+      flex-direction: column;
+    }
+    img {
+      width: 80%;
+    }
+    .tasteDesc {
+      margin-top: 10vw;
+      width: 100%;
+      align-items: center;
+      text-align: center;
+      h5 {
+        margin: 3vw 0;
+
+        font-size: 4vw;
+      }
+      p {
+        margin-bottom: 4vw;
+        line-height: 7vw;
+        font-size: 4vw;
+      }
+    }
+  }
+}

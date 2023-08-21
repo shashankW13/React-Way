@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap");
+
+//colors
+
+$primaryColor: #f8765e;
+$secondaryColor: #9bdbe7;
+$darkBlue: #031d5b;
+$kindaBlue: #5b6c94;
+$greyFont: #7c7c7c;
+$grey: #cdcdcd;
+
+$max-width: 1400px;
+
+%centrofy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
