@@ -1,4 +1,5 @@
 import styles from "./style"
+import { Analytics } from '@vercel/analytics/react'
 import { 
 	Hero,
 	Navbar, 
@@ -36,6 +37,7 @@ export const App = () => (
 				<Clients /> 
 				<CTA /> 
 				<Footer />
+				<Analytics />
 			</div>
 		</div>
 	</div>
